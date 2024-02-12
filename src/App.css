@@ -9,73 +9,60 @@ body > div {
   width: 100vw;
 }
 
+
+@media (min-width: 600px) {
 #container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#container > div {
-  display: flex;
+      display:block;
+      justify-content: space-evenly;
+      width: 100%;
+      background-color: #333;
 }
 
 #main-section {
-  flex-grow: 1;
-}
-
-#main-section {
-  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
 }
-
-
-.theme {
-  background-color: #0b0b0b; 
-  color: #f9a01b; 
-}
-
-.theme button {
-  background-color: #f9a01b; 
-  color: #0b0b0b; 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.theme button:hover {
-  background-color: #0b0b0b; 
-  color: #f9a01b;
-}
-
 
 .all-players {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .player-card {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: 200px;
-  margin: 10px;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  border: 1em solid;
+    background-color: #fff;
+    border-color: #ddd;
+    color: #333;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    width: 100%;
+    box-sizing: border-box;
 }
-
-.player-card h4 {
-  margin: 0 0 10px 0;
-}
-
 .player-card img {
   max-width: 100%;
   height: auto;
+}
+
+
+    #nav ul {
+      color: #f2f2f2;
+      list-style: none; 
+      padding: 0; 
+    }
+
+    .nav li {
+      display: inline-block; 
+      margin-right: 10px; 
+    }
+    
+    .nav li:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  
 }
