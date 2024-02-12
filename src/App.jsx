@@ -4,8 +4,8 @@ import Navbar from './components/Navbar'
 import SinglePlayer from './components/SinglePlayer';
 import AllPlayers from './components/AllPlayers';
 import NewPlayer from './components/NewPlayerForm';
-import { useNavigate } from 'react-router-dom';
-import SearchPlayer from './components/SearchPlayer';
+//import { useNavigate } from 'react-router-dom';
+//import SearchPlayer from './components/SearchPlayer';
 import './App.css'
 
 function App() {

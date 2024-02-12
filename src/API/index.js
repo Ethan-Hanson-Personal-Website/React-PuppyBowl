@@ -21,3 +21,33 @@ export async function fetchSinglePlayer(id) {
         throw error;
     }
 }
+
+export async function createPlayer(playerData) {
+    try {
+      const response = await fetch(APIURL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(playerData),
+      });
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error creating player:', error);
+      throw error;
+    }
+  }
+
+  export async function deletePlayer(id) {
+    try {
+      const response = await fetch(`${APIURL}/${id}`, {
+        method: 'DELETE',
+      });
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error deleting player:', error);
+      throw error;
+    }
+  }
