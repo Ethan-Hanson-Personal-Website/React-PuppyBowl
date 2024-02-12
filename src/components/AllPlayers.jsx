@@ -2,12 +2,19 @@ import { fetchPlayers } from "../API/index.js";
 import { useEffect, useState } from "react";
 
 export default function AllPlayers() {
-
   const [players, setPlayers] = useState([]);
+
+
   useEffect(() => {
-    fetchPlayers()
-      .then(data => setPlayers(data.data.players))
-      .catch(error => console.error(error));
+    const renderPlayers = async () => {
+      try{
+        const players = await fetchPlayers();
+        setPlayers(players);
+      }catch(error){
+        console.error('Error fetching players:', error);
+      }
+    };
+        renderPlayers();
   }, []); 
 
   return (

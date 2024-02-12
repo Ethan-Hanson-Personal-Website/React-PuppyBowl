@@ -1,0 +1,25 @@
+  @media (max-width: 600px) {
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: #333;
+      }
+      
+      #nav ul {
+        color: #f2f2f2;
+        list-style: none; 
+        padding: 0; 
+      }
+
+      .nav li {
+        display: inline-block; 
+        margin-right: 10px; 
+      }
+      
+      .nav li:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    
+  }
